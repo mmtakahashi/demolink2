@@ -22,7 +22,7 @@
         <option value="normalize.css">テーマ選択</option>
         <option value="css/black.css">ターミナル風</option>
         <option value="css/xmas.css">クリスマス風</option>
-        <option value="css/white_xmas.css">ホワイトクリスマス風</option>
+        <!--<option value="css/white_xmas.css">ホワイトクリスマス風</option>-->
         <!--テーマを追加する場合に追加-->
       </select>
     </div>
@@ -79,16 +79,15 @@
   </body>
   <script type="text/javascript">
     function switch_thema(css_file, index){
-      var css_index = 1;//point to normalize.css
-      var oldlink = document.getElementsByTagName("link").item(css_index);
+      var link_index = 1;//point to normalize.css
+      var oldlink = document.getElementsByTagName("link").item(link_index);
 
       var newlink = document.createElement("link");
       newlink.setAttribute("rel", "stylesheet");
       newlink.setAttribute("type", "text/css");
       newlink.setAttribute("href", css_file);
-      console.log(document.getElementsByTagName("head").item(index))
       document.getElementsByTagName("head").item(index).replaceChild(newlink, oldlink);
-      if (css_file = "")
+     
     }
   </script>
 </html>
