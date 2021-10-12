@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+h1,a {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+}
+
+.main-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin: 20px;
+}
+
+.list-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.red {
+    transition: 0.5s all linear;
+    background: linear-gradient(178deg, #000000, #525252);
+    box-shadow: 13px -5px 26px #3b3b3b, -13px 13px 26px #474747;
+}
+
+.red:hover {
+    background: #333333;
+    box-shadow: none;
+}
+
+.white {
+    transition: 1s all linear;
+    background: linear-gradient(184deg, #000000, #8a8a8a);
+    box-shadow: 2px -0.1px 26px #131313, -13px 13px 26px #3a3a3a;
+}
+
+.white:hover {
+    background: #000000;
+    box-shadow: none;
+}
