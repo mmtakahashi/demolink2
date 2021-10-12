@@ -31,7 +31,19 @@ a:link, a:visited, a:hover, a:active {
     color: white;
 }
 
+.main-container {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+
+.snow-container, .main-wrapper {
+    position: absolute;
+}
+
 .main-wrapper {
+    z-index: 20;
     height: 100%;
     display: flex;
     flex-direction:column;
@@ -75,4 +87,38 @@ a:link, a:visited, a:hover, a:active {
 .white:hover {
     background: green;
     box-shadow: none;
+}
+
+.snow-container {
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.snow {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: animate-snow 10s linear;
+}
+  
+@keyframes animate-snow {
+0% {
+    opacity: 0;
+    top: 0;
+}
+
+10% {
+    opacity: 1;
+}
+
+90% {
+    opacity: 1;
+}
+
+100% {
+    opacity: 0;
+    top: 100vh;
+}
 }
