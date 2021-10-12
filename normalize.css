@@ -9,14 +9,15 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-color: #dfdfdf;
+    background-color: #000000;
 }
 
 h1,a {
-    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Press Start 2P', cursive;
 }
 
 h1 {
+    color: white;
     text-align: center;
 }
 
@@ -25,7 +26,7 @@ a {
 }
 
 a:link, a:visited, a:hover, a:active {
-    color: blue;
+    color: white;
 }
 
 .main-wrapper {
@@ -54,22 +55,22 @@ a:link, a:visited, a:hover, a:active {
 
 .red {
     transition: 0.5s all linear;
-    background: linear-gradient(178deg, #ffcdcd, #daadad);
-    box-shadow: 13px -5px 26px #d3a7a7, -13px 13px 26px #ffd9d9;
+    background: linear-gradient(178deg, #000000, #525252);
+    box-shadow: 13px -5px 26px #3b3b3b, -13px 13px 26px #474747;
 }
 
 .red:hover {
-    background: #e2c0c0;
+    background: #333333;
     box-shadow: none;
 }
 
 .white {
     transition: 1s all linear;
-    background: linear-gradient(184deg, #efefef, #c9c9c9);
-    box-shadow: 2px -0.1px 26px #c3c3c3, -13px 13px 26px #ffffff;
+    background: linear-gradient(184deg, #000000, #8a8a8a);
+    box-shadow: 2px -0.1px 26px #131313, -13px 13px 26px #3a3a3a;
 }
 
 .white:hover {
-    background: #dfdfdf;
+    background: #000000;
     box-shadow: none;
 }
