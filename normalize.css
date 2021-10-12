@@ -13,15 +13,17 @@ html, body {
 }
 
 h1,a {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Are You Serious', cursive;
 }
 
 h1 {
-    color: white;
+    font-size: 50px;
+    color: yellow;
     text-align: center;
 }
 
 a {
+    font-size: 40px;
     text-decoration: none;
 }
 
@@ -55,22 +57,22 @@ a:link, a:visited, a:hover, a:active {
 
 .red {
     transition: 0.5s all linear;
-    background: linear-gradient(178deg, #000000, #525252);
-    box-shadow: 13px -5px 26px #3b3b3b, -13px 13px 26px #474747;
+    background: linear-gradient(178deg, #ff0101, #a72210);
+    box-shadow: 13px -5px 26px #532c2c, -13px 13px 26px #9b1d1d;
 }
 
 .red:hover {
-    background: #333333;
+    background: #7c1919;
     box-shadow: none;
 }
 
 .white {
     transition: 1s all linear;
-    background: linear-gradient(184deg, #000000, #8a8a8a);
-    box-shadow: 2px -0.1px 26px #131313, -13px 13px 26px #3a3a3a;
+    background: linear-gradient(184deg, #008a0b, #175a26);
+    box-shadow: 2px -0.1px 26px #233f2b, -13px 13px 26px #275d30;
 }
 
 .white:hover {
-    background: #000000;
+    background: green;
     box-shadow: none;
 }
