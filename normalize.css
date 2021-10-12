@@ -31,10 +31,18 @@ a:link, a:visited, a:hover, a:active {
     color: white;
 }
 
+.material-icons {
+    color: yellow;
+}
+
+.h1-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .main-container {
     width: 100%;
     display: flex;
-
     justify-content: center;
 }
 
