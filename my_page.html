@@ -19,11 +19,11 @@
   <body>
     <div class="custom-select" style="width:200px;">
       <select onchange="switch_thema(this.value, 0)">
-        <option value="normalize.css">テーマ選択</option>
+        <option value="normalize.css" family="Noto+Sans+Mono&display=swap">テーマ選択</option>
         <option value="css/black.css">ターミナル風</option>
         <option value="css/xmas.css">クリスマス風</option>
-        <!--<option value="css/white_xmas.css">ホワイトクリスマス風</option>-->
-        <!--テーマを追加する場合に追加-->
+        <option value="css/white_xmas.css">ホワイトクリスマス風</option>
+        <!--テーマを追加する場合に追加 -->
       </select>
     </div>
     <div class="main-wrapper">
@@ -87,7 +87,14 @@
       newlink.setAttribute("type", "text/css");
       newlink.setAttribute("href", css_file);
       document.getElementsByTagName("head").item(index).replaceChild(newlink, oldlink);
-     
+      // to do なんとか整える
+      if (css_file === "css/white_xmas.css"){
+        var extra_js = document.createElement("source");
+        extra_js.setAttribute("src","js/snow.js");
+        extra_js.setAttribute("type", "text/javascript");
+        console.log(document)
+        document.body.appendChild(extra_js);
+      }
     }
   </script>
 </html>
